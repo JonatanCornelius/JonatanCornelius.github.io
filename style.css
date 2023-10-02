@@ -1,3 +1,105 @@
-div {
-    background-color: red;
+* {margin: 10px;}
+
+/*Allt som har med header att göra  */
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header {
+    height: 400px;
+    width: 100%;
+    background-image: url(bild3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.socials
+
+.bottom-header {
+    height: 110px;
+    
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+}
+
+.header-image {
+    
+    height: 90px;
+    width: 90px;
+
+}
+
+.header-text {
+    margin: 5px;
+    display: inline-block;
+    letter-spacing: 5px;
+    
+
+    
+    font-size: 40px;
+}
+
+/* Här slutar header */
+
+.big-wrapper {
+    border: 1px solid green;
+    height: fit-content;
+    display: flex;
+}
+
+.wrapper-split-left {
+ border: 1px solid red;
+ height: fit-content;
+ flex:3;
+}
+
+.wrapper-split-right {
+    border: 1px solid rgb(4, 0, 253);
+    height: 1000px;
+    flex:1;
+}
+
+.navbar {
+
+    overflow: hidden;
+
+    background-color: rgb(237, 237, 237);
+    box-shadow: 0 1.4rem 8rem rgb(131, 130, 130);
+    border-radius: .8rem;
+
+
+
+}
+@media screen and (min-width:500px) and (max-width:800px){
+    .big-wrapper{
+        flex-direction: column;
+    }
+        .header-text {
+            font-size: large;
+            margin-top: 10px;
+            
+    
+    
+        }
+    
+        .header-image {
+            display: none;
+        }
+}
+
+@media (width <=500px) {
+    .big-wrapper {
+            flex-direction: column;
+        }
+    .bottom-header{
+        display: none;
+    }
+    .top-header{
+        
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
